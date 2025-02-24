@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container {
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 7px;
+            box-shadow: 1px 1px 14px 1px black;
+        }
+
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            padding: 15px;
+            margin-top: -25px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 350px;
+            height: 20px;
+            margin-top: 15px;
+
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder,
+        input[type="number"]::placeholder {
+
+            padding-left: 5px;
+        }
+
+
+
+        input[type="file"] {
+            padding-top: 15px;
+        }
+
+        .gender {
+            padding-top: 10px;
+        }
+
+        select {
+            margin-top: 15px;
+            width: 358px;
+            height: 25px;
+        }
+
+        input[type="number"] {
+            margin-top: 15px;
+            width: 350px;
+            height: 20px;
+        }
+
+        textarea {
+            margin-top: 15px;
+            width: 350px;
+        }
+
+        input[type="submit"] {
+            width: 350px;
+            height: 30px;
+            margin-top: 15px;
+            background-color: #45a049;
+            border-radius: 7px;
+        }
+
+        textarea::placeholder {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Job Application</h2>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Full Name" required> <br>
+            <input type="email" id="email" name="email" placeholder="Email" required> <br>
+            <input type="password" id="number" name="passwords" placeholder="Phone Number" required> <br>
+
+            <div class="gender">
+                <label for="">Gender :</label>
+                <input type="radio" id="male" name="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="male">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="male">
+                <label for="other">Other</label> <br>
+            </div>
+
+            <input type="file" multiple> <br>
+
+            <select name="position">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+
+            <br>
+            <input type="number" name="experience" min="0" placeholder="Years of Experience">
+            <br>
+            <textarea name="comments" placeholder="Comments" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+
+</html>
